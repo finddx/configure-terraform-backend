@@ -21,7 +21,7 @@ runs:
     - name: Get the resource
       id: resource
       run: |
-        cat > ${{inputs.working-directory}/backend.tf << EOF
+        cat > ${{inputs.working-directory}}/backend.tf << EOF
           terraform {
             backend "s3" {
               bucket         = "${{inputs.backend_bucket}}"
