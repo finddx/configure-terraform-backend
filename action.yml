@@ -18,6 +18,7 @@ runs:
     - name: Get the resource
       id: resource
       run: |
+        echo $PWD
         cat > backend.tf << EOF
           terraform {
             backend "s3" {
